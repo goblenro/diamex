@@ -144,8 +144,8 @@
                 grid-template-areas:
                   "name"
                   "category"
-                  "size"
-                  "type";
+                  "type"
+                  "size";
             }
         }
 
@@ -166,5 +166,6 @@
         .feature-tag { display:inline-block; padding:2px 8px; background:#e8f5e9; color:#2e7d32; border-radius:12px; font-size:0.8em; margin:2px; }
         .no-results { text-align:center; padding:60px 20px; color:#999; }
         .no-results h3 { font-size:1.5em; margin-bottom:10px; }
-
-        #footerText { color: #ffffff; }
+        #footerText { color: #000000; }
+        #footerText2 { font-weight:bold; color:#000000; }
+        #footerText3 { text-decoration: none; color:#000000; }		
