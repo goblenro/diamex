@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Catalog complet produse cosmetice profesionale Laboratoire Diamex pentru câini. Șampoane, balsamuri, spray-uri și soluții de îngrijire. Filtrare după tip blană și caracteristici speciale."/>
+    <meta name="keywords" content="diamex, șampon câini, balsam câini, cosmetice profesionale câini, îngrijire blană, grooming câini"/>
+    <meta name="robots" content="index, follow"/>
+    <link rel="canonical" href="https://www.diamex.ro/ghid/"/>
+
+    <meta property="og:title" content="Laboratoire Diamex - Ghid de selectie produse interactiv"/>
+    <meta property="og:description" content="Descoperă gama completă de produse Diamex pentru îngrijirea profesională a câinilor."/>
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/goblenro/diamex/Ghid%20de%20selec%C8%9Bie%20produse%20Laboratoire%20Diamex.webp"/>
+    <meta property="og:url" content="https://www.diamex.ro/ghid/"/>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Laboratoire Diamex - Ghid de selectie produse interactiv",
+      "description": "Produse cosmetice profesionale pentru îngrijirea câinilor",
+      "provider": {
+        "@type": "Organization",
+        "name": "Laboratoire Diamex",
+        "url": "https://www.diamex.ro"
+      }
+    }
+    </script>
+
+    <title>Laboratoire Diamex - Ghid de selectie produse interactiv</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/goblenro/diamex/diamex_v4.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="lang-switcher" id="langSwitcher" aria-haspopup="listbox">
+                <button id="langBtn" aria-expanded="false" aria-haspopup="listbox" type="button">
+                    <img id="langFlag" src="https://twemoji.maxcdn.com/v/latest/svg/1f1ec-1f1e7.svg" alt="EN" width="20" height="14" onerror="this.style.display='none'">
+                    <span id="langLabel">EN</span>
+                    <span class="caret" aria-hidden="true">▾</span>
+                </button>
+
+                <ul id="langList" role="listbox" tabindex="-1" hidden>
+                    <li role="option" data-lang="de" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1e9-1f1ea.svg" alt="DE" width="20" height="14" onerror="this.style.display='none'"> DE
+                    </li>
+                    <li role="option" data-lang="en" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1ec-1f1e7.svg" alt="EN" width="20" height="14" onerror="this.style.display='none'"> EN
+                    </li>
+                    <li role="option" data-lang="es" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1ea-1f1f8.svg" alt="ES" width="20" height="14" onerror="this.style.display='none'"> ES
+                    </li>
+                    <li role="option" data-lang="fr" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1eb-1f1f7.svg" alt="FR" width="20" height="14" onerror="this.style.display='none'"> FR
+                    </li>
+                    <li role="option" data-lang="hu" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1ed-1f1fa.svg" alt="HU" width="20" height="14" onerror="this.style.display='none'"> HU
+                    </li>
+                    <li role="option" data-lang="it" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1ee-1f1f9.svg" alt="IT" width="20" height="14" onerror="this.style.display='none'"> IT
+                    </li>
+                    <li role="option" data-lang="nl" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1f3-1f1f1.svg" alt="NL" width="20" height="14" onerror="this.style.display='none'"> NL
+                    </li>
+                    <li role="option" data-lang="ro" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1f7-1f1f4.svg" alt="RO" width="20" height="14" onerror="this.style.display='none'"> RO
+                    </li>
+                    <li role="option" data-lang="ru" tabindex="0" aria-selected="false">
+                        <img src="https://twemoji.maxcdn.com/v/latest/svg/1f1f7-1f1fa.svg" alt="RU" width="20" height="14" onerror="this.style.display='none'"> RU
+                    </li>
+                </ul>
+            </div>
+
+            <h1 id="headerTitle">
+                <img src="https://cdn.jsdelivr.net/gh/goblenro/diamex/Laboratoire-Diamex-logo.png" alt="Logo Laboratoire Diamex - Cosmetice Profesionale pentru Câini" loading="lazy">
+            </h1>
+            <p id="headerSubtitle">Ghid de selecție produse Diamex - Cosmetice profesionale pentru îngrijirea câinilor</p>
+        </div>
+
+        <div class="filters">
+            <div class="filters-grid">
+                <div class="filter-section filter-category">
+                    <h3 id="categoryHeading">🧴 Filtrare după categorie:</h3>
+                    <div class="filter-buttons" id="categoryFilters"></div>
+                </div>
+
+                <div class="filter-section filter-size">
+                    <h3 id="sizeHeading">📦 Filtrare după cantitate:</h3>
+                    <div class="filter-buttons" id="sizeFilters"></div>
+                </div>
+
+                <div class="filter-section filter-name">
+                    <h3 id="nameHeading">🔍 Filtrare după nume:</h3>
+                    <input type="text" id="searchInput" placeholder="Ex: white, puppy, aloe..." class="search-input">
+                </div>
+
+                <div class="filter-section filter-type">
+                    <h3 id="typeHeading">🐕 Filtrare după tip blană:</h3>
+                    <div class="filter-buttons" id="typeFilters"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="results-header">
+                <div class="product-count" id="productCount"></div>
+                <button id="clearFiltersBtn" class="clear-filters" onclick="clearAllFilters()">🔄 Resetează filtrele</button>
+            </div>
+            <div class="products-grid" id="productsGrid"></div>
+        </div>
+
+        <section style="padding: 40px 30px; max-width: 1000px; margin: 0 auto;">
+            <h2 id="whyTitle">De ce să alegi produsele Laboratoire Diamex?</h2>
+            <p id="whyText">Laboratoire Diamex este lider în producția de cosmetice profesionale pentru câini, oferind o gamă completă de șampoane, balsamuri, spray-uri și soluții de îngrijire. Produsele noastre sunt formulate special pentru diferite tipuri de blană: scurtă, lungă, sârmoasă sau deteriorată.</p>
+
+            <h3 id="ourRangeTitle">Gama noastră include:</h3>
+            <ul id="ourRangeList">
+                <li id="ourRangeList1"><strong>Șampoane specializate</strong> - pentru blană albă, neagră, colorată sau sensibilă</li>
+                <li id="ourRangeList2"><strong>Balsamuri nutritive</strong> - pentru descâlcire și strălucire</li>
+                <li id="ourRangeList3"><strong>Spray-uri profesionale</strong> - anti-static, volumizante și protective</li>
+                <li id="ourRangeList4"><strong>Soluții de îngrijire</strong> - pentru urechi, ochi și lăbuțe</li>
+            </ul>
+        </section>
+
+        <a href="https://cdn.jsdelivr.net/gh/goblenro/diamex/GhidDeSelectieProduseLaboratoireDiamex.pdf" target="_blank"><img src="https://cdn.jsdelivr.net/gh/goblenro/diamex/Ghid de selecție produse Laboratoire Diamex.webp" alt="Ghid de selecție produse Laboratoire Diamex" style="width:100%;"></a>
+    </div>
+	
+	<script src="https://cdn.jsdelivr.net/gh/goblenro/diamex/diamex_v4.js" defer></script>
+
+    <footer id="siteFooter" style="padding:20px; text-align:center;">
+        <p id="footerText">© 2025 Laboratoire Diamex. All rights reserved.</p>
+		<p id="footerText2">Powered by <a href="https://www.petpro.ro/" target="_blank" id="footerText3">PetPro.ro</a></p>
+    </footer>
+</body>
+</html>
